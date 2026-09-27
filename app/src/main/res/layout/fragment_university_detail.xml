@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Va dentro de un ScrollView porque una universidad puede tener varios
+     dominios y en pantallas chicas no entraria. -->
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <TextView
+            android:id="@+id/tvDetailName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="?attr/colorOnSurface"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            tools:text="Universidad Nacional de Córdoba" />
+
+        <!-- Los cuatro datos que pide la consigna -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="@string/label_country"
+            android:textAllCaps="true"
+            android:textColor="?attr/colorPrimary"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvDetailCountry"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:textColor="?attr/colorOnSurface"
+            android:textSize="15sp"
+            tools:text="Argentina" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="@string/label_country_code"
+            android:textAllCaps="true"
+            android:textColor="?attr/colorPrimary"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvDetailCountryCode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:textColor="?attr/colorOnSurface"
+            android:textSize="15sp"
+            tools:text="AR" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="@string/label_province"
+            android:textAllCaps="true"
+            android:textColor="?attr/colorPrimary"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvDetailProvince"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:textColor="?attr/colorOnSurface"
+            android:textSize="15sp"
+            tools:text="Córdoba" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="@string/label_domains"
+            android:textAllCaps="true"
+            android:textColor="?attr/colorPrimary"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvDetailDomains"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:lineSpacingExtra="3dp"
+            android:textColor="?attr/colorOnSurface"
+            android:textSize="15sp"
+            tools:text="unc.edu.ar\nfamaf.unc.edu.ar" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="@string/label_web_page"
+            android:textAllCaps="true"
+            android:textColor="?attr/colorPrimary"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <!-- El texto del boton es la URL, asi el enlace esta a la vista y no
+             escondido detras de una palabra generica. -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnOpenWeb"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            tools:text="http://www.unc.edu.ar/" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnBack"
+            style="@style/Widget.Material3.Button.OutlinedButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="@string/button_back" />
+
+    </LinearLayout>
+
+</ScrollView>

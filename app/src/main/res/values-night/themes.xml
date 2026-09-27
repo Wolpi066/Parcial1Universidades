@@ -1,0 +1,10 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Mismo tema pero con los colores del modo oscuro. Android elige este
+         solo cuando el celular esta en modo noche. -->
+    <style name="Base.Theme.Parcial1Universidades" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/brand_primary_dark</item>
+        <item name="colorOnPrimary">@color/brand_on_primary_container</item>
+        <item name="colorPrimaryContainer">@color/brand_primary_container_dark</item>
+        <item name="colorOnPrimaryContainer">@color/brand_on_primary_container_dark</item>
+    </style>
+</resources>

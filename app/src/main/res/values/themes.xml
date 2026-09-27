@@ -1,0 +1,12 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Tema claro. NoActionBar porque la barra de titulo la armamos nosotros
+         dentro de cada layout. -->
+    <style name="Base.Theme.Parcial1Universidades" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/brand_primary</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="colorPrimaryContainer">@color/brand_primary_container</item>
+        <item name="colorOnPrimaryContainer">@color/brand_on_primary_container</item>
+    </style>
+
+    <style name="Theme.Parcial1Universidades" parent="Base.Theme.Parcial1Universidades" />
+</resources>

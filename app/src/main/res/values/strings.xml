@@ -1,0 +1,24 @@
+<resources>
+    <!-- Todos los textos visibles van aca y no sueltos en los XML,
+         asi quedan en un solo lugar. Se usan con @string/nombre o getString(). -->
+    <string name="app_name">Universidades del Mundo</string>
+
+    <!-- Pantalla 1: buscador y lista -->
+    <string name="title_main">Universidades del Mundo</string>
+    <string name="hint_country">País (ej. Argentina)</string>
+    <string name="message_start">Escribí un país para ver sus universidades.</string>
+    <string name="message_empty">No encontramos universidades en \"%1$s\".</string>
+
+    <!-- Pantalla 2: detalle -->
+    <string name="label_country">País</string>
+    <string name="label_country_code">Código de país</string>
+    <string name="label_province">Estado / Provincia</string>
+    <string name="label_domains">Dominios oficiales</string>
+    <string name="label_web_page">Sitio web</string>
+    <string name="button_back">Volver a la lista</string>
+    <string name="no_web_page">Sin sitio web</string>
+    <string name="error_no_browser">No hay ningún navegador instalado</string>
+
+    <!-- Datos que la API no siempre completa -->
+    <string name="not_available">No disponible</string>
+</resources>
